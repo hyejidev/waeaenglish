@@ -1,4 +1,4 @@
-# Waea English
+# Waea English📞
 
 Waea English is a project providing telephone English services in New Zealand.
 

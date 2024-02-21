@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding-top: 100px; /* 헤더 높이에 맞춰 조정 */
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    padding-top: 30px; /* 헤더와 메인 컨텐츠 사이의 공간 */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: sticky;
+    top: 80px; /* 헤더 높이에 맞춰 조정, 스크롤 시 사이드바 고정 */
+    height: calc(100vh - 80px); /* 전체 높이에서 헤더 높이를 뺀 만큼 설정 */
+    
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px; /* 사이드바와 컨텐츠 사이의 공간 */
+}
+
+/* my menu name */
+.my_header{
+    margin-top:30px;
+}
+.my_title {
+    font-size: 2rem; /* 큰 제목의 글자 크기를 조정합니다. */
+    margin-bottom: 0.5rem;
+  }
+  
+  .my_subtitle {
+    font-size: 1rem; /* 부제목의 글자 크기를 조정합니다. */
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  .my_subtitle2 {
+    font-size: 1rem; /* 부제목의 글자 크기를 조정합니다. */
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+
+
+  .my_subtitle3 {
+    font-size: 0.7rem; /* 부제목의 글자 크기를 조정합니다. */
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+
+/* 헤더와 메인 컨텐츠 사이의 공간을 위한 추가 스타일 */
+body > header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}

@@ -1,0 +1,88 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-primary: #544272; /* 보라색 */
+    --color-accent: #9888b9; /* 연보라색 */
+    background: #f0f0f7;
+    font-family: 'Nanum Gothic', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 70px; /* footer 높이만큼 하단에 공간 추가 */
+}
+
+
+.hero-section {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    padding: 170px 20px 0 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* 흐림 효과를 적용할 가상 요소 */
+.hero-section::before {
+    content: ""; /* 가상 요소의 내용 설정 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 좌측에 위치 */
+    width: 100%; /* 가로 길이 설정 */
+    height: 100%; /* 세로 길이 설정 */
+    background-image: inherit; /* 배경 이미지 상속 */
+    backdrop-filter: blur(8px); /* 배경을 8px만큼 흐리게 함 */
+    z-index: -1; /* 배경 이미지 뒤에 표시되도록 설정 */
+}
+
+/* 텍스트의 스타일을 조정할 수 있습니다. */
+.hero-section h1,
+.hero-section p {
+    color: #fff; /* 텍스트 색상 설정 */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.teacher-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.teacher-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: calc(20% - 1rem);
+}
+
+.teacher-image img, .teacher-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.button {
+    background-color: var(--color-accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #827fb0;
+}

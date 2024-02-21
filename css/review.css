@@ -1,0 +1,72 @@
+ 
+        .reviews-header {
+            padding-top: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews-title {
+  font-size: 2rem; /* 큰 제목의 글자 크기를 조정합니다. */
+  margin-bottom: 0.5rem;
+}
+
+.reviews-subtitle {
+  font-size: 1.5rem; /* 부제목의 글자 크기를 조정합니다. */
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px; /* 컨테이너의 최대 너비를 설정합니다. */
+}
+
+.review-card {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 20px; /* 리뷰 카드 간의 마진을 조정합니다. */
+  padding: 15px; /* 리뷰 카드 내부 패딩을 조정합니다. */
+  border-radius: 5px; /* 리뷰 카드의 모서리를 둥글게 합니다. */
+  background: #f9f9f9; /* 배경색을 설정합니다. */
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px; /* 아바타와 텍스트 사이의 마진을 조정합니다. */
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-author {
+  font-size: 1rem; /* 글자 크기 조정 */
+  font-weight: bold;
+}
+
+.review-location,
+.review-date {
+  font-size: 0.85rem; /* 글자 크기 조정 */
+  font-style: italic;
+  color: #777;
+}
+
+.review-content {
+  font-size: 0.9rem; /* 리뷰 내용의 글자 크기를 조정합니다. */
+  margin: 5px 0;
+}
+
+.review-show-more {
+  font-size: 0.85rem; /* 버튼의 글자 크기를 조정합니다. */
+  margin-top: 5px;
+  background: none;
+  color: #007bff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
